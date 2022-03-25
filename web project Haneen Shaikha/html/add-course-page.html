@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Add Course Page</title>
+      
+   <meta charset="utf-8">
+   <meta http-equiv="refresh"content ="120">
+   <meta name ="keywords" content="html,css">
+   <meta name ="desctption" contant ="lab in azhar">
+   <meta name ="author"contant ="Haneen">
+   <meta name ="viewport" content="with=device-with,intial-scal=1.0">
+      
+    <!-- File CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="./personal-information-page.html"><b>Personal Information</b></a></li>
+                    <li><a href="./course-information-page.html"><b>Courses Information</b></a></li>
+                    <li><a href="./experience-inforamtion-page.html"><b>Experience Information</b></a></li>
+                    <li><a class="link-active" href="./add-course-page.html"><b>Add Course</b></a></li>
+                    <li><a href="./add-experience-page.html"><b>Add experience</b></a></li>
+                </ul>
+                <div class="nav-logo"><img src="../img/logo.png" width="50" height="50"></div>
+            </nav>
+        </div>
+    </header>
+     <!-- End Header -->
+    
+    <div class="form-course">
+      <form action="" method="post">
+          <div>
+              <label for="course-name">Course Name:</label>
+              <input id="course-name" type="text" name="course-name" required>
+          </div>
+          
+          <div class="form-course-item">
+              <label for="hours-course">Number of Hours:</label>
+              <input id="hours-course" type="number" name="hours-course" min="2" max="50" required>
+          </div>
+          
+          <div class="form-course-item">
+              <label for="start-date-course">Start Date:</label>
+              <input id="start-date-course" type="date" name="start-date-course" required>
+          </div>
+          
+          <div class="form-course-item">
+              <label for="end-date-course">End Date:</label>
+              <input id="end-date-course" type="date" name="end-date-course">
+          </div>
+          
+          <div class="form-course-item">
+              <label for="institution-course">Institution:</label>
+              <input id="institution-course" type="text" name="institution-course" required>
+          </div>
+          
+          <div class="form-course-item">
+              <label for="attachment-course">Attachment:</label>
+              <input id="attachment-course-file" type="radio" value="File" name="attachment-course-file" checked>
+              <label for="attachment-course-file">File</label> 
+              <input id="attachment-course-url" type="radio" value="URL" name="attachment-course-url">
+              <label for="attachment-course-url">URL</label>
+          </div>
+          
+          <div class="form-course-item">
+              <label for="url-course">URL:</label>
+              <input id="url-course" type="url" name="url-course" required>
+          </div>
+          
+          <div class="form-course-item">
+              <label for="file-course">File:</label>
+              <input id="file-course" type="file" name="file-course" value="Choose File">
+          </div>
+          
+          <div class="form-course-item">
+              <label for="textarea-course"  style="position: absolute;">Notes:</label>
+              <textarea id="textarea-course" name="textarea-course"  cols="28" rows="6"></textarea>
+          </div>
+          
+          <div class="form-course-item">
+              <input class="btn-save-course" type="submit" value="Save" name="save">
+              <input class="btn-reset-course" type="reset" value="Reset" name="reset">
+          </div>
+      </form>
+      </div>
+      <img class="course-img" src="../img/course.jpg" width="550"height="717">
+  </body>
+</html>

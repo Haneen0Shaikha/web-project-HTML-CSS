@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="120">
+  <meta name="keywords" content="html,css">
+  <meta name="desctption" contant="lab in azhar">
+  <meta name="author" contant="Haneen">
+  <meta name="viewport" content="with=device-with,intial-scal=1.0">
+
+  <title>Add Experience Page</title>
+  <!-- File CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="container">
+        <nav>
+          <ul>
+            <li><a href="./personal-information-page.html"><b>Personal Information</b></a></li>
+            <li><a href="./course-information-page.html"><b>Courses Information</b></a></li>
+            <li><a href="./experience-inforamtion-page.html"><b>Experience Information</b></a></li>
+            <li><a href="./add-course-page.html"><b>Add Course</b></a></li>
+            <li><a class="link-active" href="./add-experience-page.html"><b>Add experience</b></a></li>
+        </ul>
+            <div class="nav-logo"><img src="../img/logo.png" width="50" height="50"></div>
+        </nav>
+    </div>
+</header>
+ <!-- End Header -->
+
+  <div class="form-exeprience">
+    <form action="" method="post">
+      <div>
+        <label for="experience-category">Experiences Category:</label>
+        <select id="experience-category" name="experience-category">
+          <option value=""></option>
+          <option value="PHP">PHP</option>
+          <option value="Laravel">Laravel</option>
+          <option value="MySQL">MySQL</option>
+        </select>
+      </div>
+
+      <div class="form-experience-item  ">
+        <label for="experience-title">Experiences Title:</label>
+        <input id="experience-title" type="text" name="experience-title" required>
+      </div>
+      <div class="form-experience-item  ">
+        <label for="start-date-experience">Start Date:</label>
+        <input id="start-date-experience" type="date" name="start-date-experience" required>
+      </div>
+
+      <div class="form-experience-item  ">
+        <label for="end-date-experience">End Date:</label>
+        <input id="end-date-experience" type="date" name="end-date-experience">
+      </div>
+
+      <div class="form-experience-item  ">
+        <label for="institution-experience">Institution:</label>
+        <input id="institution-experience" type="text" name="institution-experience" required>
+      </div>
+
+      <div class="form-experience-item  ">
+        <label class="description-experience" for="description-experience">Description:</label>
+        <textarea class="textarea-experience" id="description-experience" name="description-experience" cols="60" rows="7"></textarea>
+      </div>
+
+      <div class="form-experience-item  -last">
+        <input class="btn-save-experience" type="submit" value="Save" name="save">
+        <input class="btn-reset-experience" type="reset" value="Reset" name="reset">
+      </div>
+    </form>
+  </div>
+  <img class="experience-img" src="../img/experience.jpg" width="400" height="556">
+</body>
+
+</html>
